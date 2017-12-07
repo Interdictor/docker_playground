@@ -6,7 +6,6 @@ RSpec.describe 'Default page' do
 
     result = page.title
 
-
     expect(result).to eq('Docker Playground')
   end
 end
