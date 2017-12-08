@@ -4,8 +4,11 @@ services:
     build: .
     ports:
      - "4567:4567"
+
   selenium:
     image: "selenium/standalone-chrome"
     container_name: "selenium"
-    ports:
-      - "4444:4444"
+    logging:
+      driver: none
+    expose:
+      - "4444"
