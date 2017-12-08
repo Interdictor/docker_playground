@@ -6,3 +6,6 @@ up:
 
 down:
 	docker-compose down
+
+tests:
+	docker-compose run web bundle exec rspec

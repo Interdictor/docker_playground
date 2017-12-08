@@ -6,7 +6,6 @@ require 'selenium-webdriver'
 
 Capybara.register_driver :chrome do |app|
   Capybara::Selenium::Driver.new(app, {
-      browser: :remote,
       url: 'http://selenium:4444/wd/hub',
       desired_capabilities: Selenium::WebDriver::Remote::Capabilities.chrome
     }
