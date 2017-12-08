@@ -8,4 +8,4 @@ down:
 	docker-compose down
 
 tests:
-	docker-compose run web bundle exec rspec
+	docker-compose run sinatrilla bundle exec rspec
