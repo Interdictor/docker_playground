@@ -4,8 +4,9 @@ RSpec.describe 'Default page' do
   it 'shows a greeting' do
     visit '/'
 
-    result = page.has_content?('Holita mundo.')
+    result = page.title
 
-    expect(result).to be(true)
+
+    expect(result).to eq('Docker Playground')
   end
 end
