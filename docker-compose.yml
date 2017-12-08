@@ -1,13 +1,14 @@
 version: '3'
 services:
-  web:
+  sinatrilla:
     build: .
+    container_name: "sinatrilla_container"
     ports:
      - "4567:4567"
 
   selenium:
     image: "selenium/standalone-chrome"
-    container_name: "selenium"
+    container_name: "selenium_container"
     logging:
       driver: none
     expose:
