@@ -8,4 +8,6 @@ down:
 	docker-compose down
 
 tests:
-	docker-compose run sinatrilla bundle exec rspec
+	docker-compose up -d --build &&\
+	docker-compose run sinatrilla bundle exec rspec &&\
+	docker-compose down
