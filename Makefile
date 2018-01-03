@@ -7,7 +7,7 @@ up:
 down:
 	docker-compose down
 
-tests:
+test:
 	docker-compose up -d --build &&\
 	docker-compose run sinatrilla bundle exec rspec &&\
 	docker-compose down

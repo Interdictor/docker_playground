@@ -1,0 +1,10 @@
+sudo: required
+
+services:
+  - docker
+
+install: true
+
+script:
+  - docker-compose up -d --build
+  - docker-compose run sinatrilla bundle exec rspec
